@@ -6,7 +6,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'lato','sans-serif';
-    background-color: rgb(125, 195, 144);
+    background-color: rgb(126, 141, 230);
 }
 /*Estas propiedades son el antes y el despues de box sizing */
 *,*:before,*::after{
@@ -19,12 +19,12 @@ header{
 
 header h1{
     text-align: center;
-    color: rgb(10, 20, 11);
+    color: rgb(247, 247, 247);
     font-size: 6rem;
 }
 
 header p{
-    color: rgb(210, 74, 74);
+    color: rgb(230, 223, 223);
     text-align: center;
     font-size: 3.2 rem;
 
@@ -32,7 +32,7 @@ header p{
 
 header p a{
     text-decoration: none ;
-    color: rgb(217, 255, 0);
+    color: rgb(172, 228, 223);
 }
 
 .DOM{
