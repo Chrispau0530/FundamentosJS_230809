@@ -168,3 +168,77 @@ if(numero1===numero5){ //Estrictamente igual (Equidad) => Mismo valor , mismo ti
 }else{
     console.log("Se comparo numero1 con numero5 , determinando que NO tienen el mismo valor")
 }
+
+
+
+
+
+console.log(`¿ES 5 === Symbol("5") antes de compararlo analizamos que tipo de dato son : siendo numero 1 tipo de dato ${typeof(numero)} y numero 9 ${typeof(numero9)}`)
+if(numero1===numero9){ //Estrictamente igual (Equidad) => Mismo valor , mismo tipo de dato
+    console.log("Se compara numero1 con numero9, determinando que tienen el mismo valor ")
+}else{
+    console.log("Se comparo numero1 con numero9 , determinando que NO tienen el mismo valor")
+}
+
+
+
+
+console.log(`¿ES Symbol(5) === Symbol(5) antes de compararlo analizamos que tipo de dato son : siendo numero 5 tipo de dato ${typeof(numero5)} y numero 6 ${typeof(numero6)}`)
+if(numero5===numero6){ //Estrictamente igual (Equidad) => Mismo valor , mismo tipo de dato
+    console.log("Se compara numero5 con numero6, determinando que tienen el mismo valor ")
+}else{
+    console.log("Se comparo numero5 con numero6 , determinando que  tienen el mismo valor y el mismo tipo de dato , es la condicion de Symbol la que lo hace unico en la misma memoria ")
+}
+
+
+
+//7.NULL 
+console.warn("--Tipo de Dato - NUL (Nulo o Vacio) ");
+//El tipo de dato nulo se asigna cuando el sistema o el usuario saben de la variable pero prefieren dejarlo vacio , bajo su consentimiento a diferencia de UNDEFINED que es un valor desconocido asignado por default de javascript
+
+let NombreUsuario= null;
+let passUsuario = null;
+let generoUsiario = null;
+let estatudRelacionActual = null;
+let fecha_UltimoPost;
+
+
+//Supongamos que estamos programando una Red Social , tipo Facebook , en la que parte de la informacion se publicara en el perfil del usuario
+// Si el usuario no ha iniciado sesion en el dispositivo movil o en la aplicacion web , puede explorar contenido con accesso publico y no existiera informacion para mostrar
+
+//En la HU (Historial de Usuario ), que el usuario desea logearse debera ingresar su numero telefonico o correo electronico y una contraseña que deberemos guardar en las variables previamente declaradas
+
+//Supongamos que el usuario :Christian P. con correo electronico christian@gmail.com desea ingresar la contraseña : pass1234
+
+NombreUsuario="christian@gmail.com";
+passUsuario="pass1234";
+
+ //En este momento de ejecucion del sistema no sabemos su genero , ni su estado de relacion sentimental
+
+ console.log(`El usuario ${NombreUsuario} esta intentando logearse con una contraseña de : ${passUsuario}`);
+
+ //Lo que prosigue es que el sistema contejara los datos ingresados con la base de datos y en caso de que los datos sean correctos comenzara la sesion en la plataforma actualizando estos valores
+
+ //Dado de Christian P. es del genero Masculino , y denota que su status de relacion no ha sido capturado o lo  mantiene privado esto generar la actualizacion de los valores en las variables 
+
+
+
+ console.log(`El usuario ${NombreUsuario}), se ha logrado exitosamente al tener acceso a su informacion de perfil podemos deducir que es el genero ${generoUsiario} y que su estatus de relacion es : ${estatudRelacionActual} y su ultima publicacion la reañozp eñ: ${fecha_UltimoPost}`);
+ // Comparando NULL vs UNDEFINED 
+ //Si bien el UNDEFINED y NULL tienen el mismo valor , no tienen el mismo tipo de dato
+
+ console.log("Comparacion de la equidad entre UNDEFINED  y NULL")
+ console.log(
+(fecha_UltimoPost == estatudRelacionActual) ?
+"Ambas variables tienen el mismo valor":
+"Las variables no tienen el mismo valor "
+ );
+
+
+ console.log("Comparacion de la identidad entre UNDEFINED y NULL");
+ console.log(
+(fecha_UltimoPost===estatudRelacionActual) ?
+"Ambas variables tienen el mismo valor y el mismo tipo de dato":
+"Las variales tienen ell mismo valor , pero no el mismo tipo de dato"
+
+ )
