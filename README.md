@@ -10,10 +10,10 @@ de confirmar los conocimientos de logica de programacion
 
 |NO.|Descripción|Potenciador|Estatus|
 |--|--|--|--|
-|1.|Metodologia de evaluacion|1|Finalizada|
-|2.|Inicializacion del Proyecto de fundamentos de JS|5|Finalizada| 
-|3.|Declaracion de Variables (Undefined/Boolean/Number)|10|Finalizada|
-|4.|Declaracion de Variables (String/BigInt/Symbol/Null/Fuction)|6|Finalizada|
+|1.|Metodologia de evaluacion|1|✅Finalizada|
+|2.|Inicializacion del Proyecto de fundamentos de JS|5|✅Finalizada| 
+|3.|Declaracion de Variables (Undefined/Boolean/Number)|10|✅Finalizada|
+|4.|Declaracion de Variables (String/BigInt/Symbol/Null/Fuction)|6|✅Finalizada|
 |5.|Introduccion a Objetos|0|Activa|
 
 ### Autor 
