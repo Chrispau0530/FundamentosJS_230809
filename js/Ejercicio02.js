@@ -220,7 +220,7 @@ console.warn("--- Tipo de Dato FUNCTION (Función)")
 const saludar =  function(nombre){return `Hola, ${nombre}!`}
 
 // Invocamos a la función declarada
-console.log(saludar('Marco'));
+console.log(saludar('Christian'));
 
 //Y que tipo de dato tiene esta constante
 console.log(`El tipo de dato de la constante saludar es: ${typeof(saludar)}`)
