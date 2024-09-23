@@ -9,7 +9,7 @@ de confirmar los conocimientos de logica de programacion
 ##  Historial de practicas 
 
 |NO.|Descripción|Potenciador|Estatus|
-|--|--|--|
+|--|--|--|--|
 |1.|Metodologia de evaluacion|1|Finalizada|
 |2.|Inicializacion del Proyecto de fundamentos de JS|5|Finalizada| 
 |3.|Declaracion de Variables (Undefined/Boolean/Number)|10|Finalizada|
