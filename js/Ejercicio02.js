@@ -103,93 +103,61 @@ console.log(`Intentando realizar la suma de : numero+numeroGrande3 el resultado 
  console.warn("---Tipo de dato SYMBOL(Simbolo o Unico)---")
 //6.SYMBOL (simbolo)
 
-const numero1=5;
+// 6. SYMBOL (Símbolo)
+console.warn("--- Tipo de Dato SYMBOL (Símbolo o Único)")
+
+const numero1 =5;
 const numero2= 5.0;
 const numero3= "5";
-const numero4= "5.0";
+const numero4="5.0"
 const numero5=Symbol(5)
 const numero6=Symbol(5)
-const numero7= Symbol(5,0)
+const numero7=Symbol(5.0)
 const numero8=Symbol("5")
-const numero9= Symbol("5,0")
-
-//Pruebas comparativas
-console.log("¿ES 5 =5.0?")
-
-if(numero1===numero2){
-    console.log("Se compara numero1 con numero2, determinando que tienen el mismo valor ")
-}else{
-    console.log("Se comparo numero1 con numero2, determinando que NO tienen el mismo valor")
-}
-
-console.log("¿ES 5 = \"5\"?")
-if(numero1==numero3){ //Estrictamente igual (Equidad) => Mismo valor , mismo tipo de dato
-    console.log("Se compara numero1 con numero3, determinando que tienen el mismo valor ")
-}else{
-    console.log("Se comparo numero1 con numerO3 , determinando que NO tienen el mismo valor")
-}
-console.log("¿ES 5 === \"5\"?")
-if(numero1===numero3){ //Estrictamente igual (Equidad) => Mismo valor , mismo tipo de dato
-    console.log("Se compara numero1 con numero3, determinando que tienen el mismo valor ")
-}else{
-    console.log("Se comparo numero1 con numerO3 , determinando que NO tienen el mismo valor")
-}
+const numero9=Symbol("5.0")
 
 
+// Pruebas comparativas
+console.log("¿Es  5 = 5.0?")
+if(numero1 == numero2)
+    console.log("Se comparó numero1 con numero2, determinando que tienen el mismo valor.")
+else 
+console.log("Se comparó numero1 con numero2, determinando que NO tienen el mismo valor.")
 
-console.log("¿ES 5 === \"5.0\"?")
-if(numero1===numero3){ //Estrictamente igual (Equidad) => Mismo valor , mismo tipo de dato
-    console.log("Se compara numero1 con numero3, determinando que tienen el mismo valor ")
-}else{
-    console.log("Se comparo numero1 con numerO3 , determinando que NO tienen el mismo valor")
-}
+console.log("¿Es  5 = \"5\"?")
+if(numero1 == numero3)
+    console.log("Se comparó numero1 con numero3, determinando que tienen el mismo valor.")
+else 
+console.log("Se comparó numero31 con numero3, determinando que NO tienen el mismo valor.")
 
 
+console.log("¿Es  5 === \"5\"?")
+if(numero1 === numero3)  //Estrictamente igual (Equidad)= Mismo valor, mismo tipo de dato
+    console.log("Se comparó numero1 con numero3, determinando que tienen el mismo valor.")
+else 
+console.log("Se comparó numero1 con numero3, determinando que tienen el mismo valor, pero NO el mismo tipo de DATO.")
 
-console.log("¿ES 5 = \"5.0\"?")
-if(numero1==numero4){ //Estrictamente igual (Equidad) => Mismo valor , mismo tipo de dato
-    console.log("Se compara numero1 con numero4, determinando que tienen el mismo valor ")
-}else{
-    console.log("Se comparo numero1 con numerO4 , determinando que NO tienen el mismo valor")
-}
 
-console.log("¿ES 5 === \"5.0\"?")
-if(numero1==numero5){ //Estrictamente igual (Equidad) => Mismo valor , mismo tipo de dato
-    console.log("Se compara numero1 con numero5, determinando que tienen el mismo valor ")
-}else{
-    console.log("Se comparo numero1 con numero5 , determinando que NO tienen el mismo valor")
-}
+console.log("¿Es  5 = \"5.0\"?")
+if(numero1 == numero4)
+    console.log("Se comparó numero1 con numero4, determinando que tienen el mismo valor.")
+else 
+console.log("Se comparó numero31 con numero4, determinando que NO tienen el mismo valor.")
+
+
+console.log("¿Es  5 === \"5.0\"?")
+if(numero1 === numero4)  //Estrictamente igual (Equidad)= Mismo valor, mismo tipo de dato
+    console.log("Se comparó numero1 con numero4, determinando que tienen el mismo valor.")
+else 
+console.log("Se comparó numero1 con numero4, determinando que tienen el mismo valor, pero NO el mismo tipo de DATO.")
 
 
 
-console.log(`¿ES 5 === Symbol(5) antes de compararlo analizamos que tipo de dato son : siendo numero 1 tipo de dato ${typeof(numero)} y numero 5 ${typeof(numero5)}`)
-if(numero1===numero5){ //Estrictamente igual (Equidad) => Mismo valor , mismo tipo de dato
-    console.log("Se compara numero1 con numero5, determinando que tienen el mismo valor ")
-}else{
-    console.log("Se comparo numero1 con numero5 , determinando que NO tienen el mismo valor")
-}
-
-
-
-
-
-console.log(`¿ES 5 === Symbol("5") antes de compararlo analizamos que tipo de dato son : siendo numero 1 tipo de dato ${typeof(numero)} y numero 9 ${typeof(numero9)}`)
-if(numero1===numero9){ //Estrictamente igual (Equidad) => Mismo valor , mismo tipo de dato
-    console.log("Se compara numero1 con numero9, determinando que tienen el mismo valor ")
-}else{
-    console.log("Se comparo numero1 con numero9 , determinando que NO tienen el mismo valor")
-}
-
-
-
-
-console.log(`¿ES Symbol(5) === Symbol(5) antes de compararlo analizamos que tipo de dato son : siendo numero 5 tipo de dato ${typeof(numero5)} y numero 6 ${typeof(numero6)}`)
-if(numero5===numero6){ //Estrictamente igual (Equidad) => Mismo valor , mismo tipo de dato
-    console.log("Se compara numero5 con numero6, determinando que tienen el mismo valor ")
-}else{
-    console.log("Se comparo numero5 con numero6 , determinando que  tienen el mismo valor y el mismo tipo de dato , es la condicion de Symbol la que lo hace unico en la misma memoria ")
-}
-
+console.log(`¿Es  5 === Symbol(5)?  , antes de compararlos analizamos que tipo de dato son: siendo numero1 del tipo: ${typeof(numero1)} y  numero5 del tipo: ${typeof(numero5)}`)
+if(numero1 === numero5)  //Estrictamente igual (Equidad)= Mismo valor, mismo tipo de dato
+    console.log("Se comparó numero1 con numero5, determinando que tienen el mismo valor.")
+else 
+console.log("Se comparó numero1 con numero5, determinando que tienen el mismo valor, pero NO el mismo tipo de DATO.")
 
 
 //7.NULL 
