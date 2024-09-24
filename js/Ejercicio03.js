@@ -88,10 +88,10 @@ console.log("%c2.- Variables Independientes ",style_console);
     let Comprador=
     {
         Clave:3216,
-        Nombre: "Karen",
-        Apellidos: "Negrete Hernández",
+        Nombre: "Christian ",
+        Apellidos: "Rodriguez Perez",
         Tipo: "Frecuente",
-        Correo: "karen@gmail.com",
+        Correo: "rodriguez@gmail.com",
         PaisOrigen: "México",
         SaldoActual: 14000.00
     }
