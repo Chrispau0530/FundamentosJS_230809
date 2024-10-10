@@ -233,10 +233,10 @@ try{  // Intenta
     let finDeSemana = false;
     let mensaje = "";
     let j=0;
-    while(j<7){
+    while(j<7 ){
         
         
-        switch(dias[j]){
+        switch(j){
             case 0: 
             finDeSemana = true;
             mensaje = "Mormingoooooo..... ZzZzZzZzZZZZZzzzzzzz"
@@ -266,8 +266,9 @@ try{  // Intenta
                 mensaje ="Por fin , fin de semanaaaaaaa si se pudo "
                 break;
         }
+        if(!finDeSemana){
         console.log(`Dia ${j} ${dias[j]}`)
-        console.log(`Mensaje del dia : ${mensaje[j]}`)
+        console.log(`Mensaje del dia : ${mensaje}`)}
         j++;
     }
          
